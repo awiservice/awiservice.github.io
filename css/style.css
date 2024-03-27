@@ -45,7 +45,7 @@ a{
     user-select: all; 
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 990px){
     /*=============== HEADER LOGO ===============*/
     header{
         position: relative;
@@ -270,7 +270,7 @@ a{
     }
 
     .panel-content{
-        padding: 5px 10px;
+        padding: 10px;
         border-left: 1px solid #d8d8d8;
         border-right: 1px solid #d8d8d8;
         border-bottom: 1px solid #d8d8d8;
@@ -300,36 +300,40 @@ a{
         font-weight: normal;
     }
 
-    /*=============== SELECT OPTION ===============*/
-    select {
-        appearance: none; /* safari */
-        -webkit-appearance: none; /* other styles for aesthetics */
-        margin: 5px 0;
-        padding: 5px;
-        border-radius: 5px;
-        text-align: -webkit-center;
-        text-align-last: center;
-        background: #f1f2f6;
-        color: #000;
-        border: 1px solid #d8d8d8;
+    /*=============== TABLE SERVICES ===============*/
+    .table-services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100% !important;
-        transition: .1s;
-        font-size: 12px;
     }
 
-    select:focus{
-        transition: .2s;
-        border-color: rgb(211, 211, 211);
-        outline: 0;
-        -webkit-box-shadow: 0 0 5px rgba(211, 211, 211, 0.5);
-        box-shadow: 0 0 5px rgba(211, 211, 211, 0.5);
+    table{
+        border-collapse: collapse;
+        display: block;
+        font-size: 14px;
     }
 
-    .value-price{
-        margin-left: 5px;
+    th, td{
+        padding: 5px 10px;
+        border: 1px solid #d8d8d8;
+    }
+
+    th{
         font-weight: bold;
+        background: #f1f2f6;
+        color: #3b3f51;
     }
 
+    .ts-name{
+        text-align: left;
+    }
+
+    .ts-price{
+        text-align: center;
+    }
+
+    /*=============== ACCORDION ===============*/
     .accordion{
         display: flex;
         flex-direction: column;
@@ -403,12 +407,17 @@ a{
     }
     }
 
+    .box-reviews-link{
+        display: flex;
+    }
+
     .box-reviews-link a{
+        font-size: 14px;
         color: #fff;
         font-weight: 300;
         background: rgb(26, 188, 156);
         border-radius: 3px;
-        padding: 1px 7px;
+        padding: 2px 7px;
         -webkit-touch-callout: none;
     }
 
@@ -674,7 +683,7 @@ a{
 
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 991px) {
     header,
     main,
     footer{
