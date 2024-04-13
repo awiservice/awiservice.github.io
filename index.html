@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui, user-scalable=no">
+
+        <title>Awiservice</title>
+
+        <link rel="stylesheet" href="/css/style.css">
+        
+        <link rel="shortcut icon" href="/awiservice.ico" type="image/x-icon">
+        <link rel="mask-icon" href="/image/awiservice-icon.svg" color="#121519">
+        <link rel="apple-touch-icon" href="image/awiservice-icon.png">
+
+        <script defer src="/js/activepage.js"></script>
+    </head>
+    <body id="index">
+        <div class="only-mobile">Этот сайт доступен только в мобильной версии.</div>
+        <header>
+            <div class="logo">
+                <a href="/" data-active="index" class="logo-link">
+                    <div class="logo-icon">
+                        <i class="i-logo-icon"></i>
+                        <snap class="logo-text">Awiservice</snap>
+                    </div>
+                </a>
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <a class="nav-link" data-active="index" href="/">Услуги</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" data-active="reviews" href="/reviews">Отзывы</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" data-active="contacts" href="/contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="container" id="container">
+                <div class="content">
+                    <table>
+                        <!-- Установка и настройка ПО -->
+                        <tr>
+                            <th class="ts-name" colspan="2">Установка и настройка ПО</th>
+                        </tr>
+                        <tr>
+                            <td>Установка Windows 10/11 на MacOS</td>
+                            <td class="ts-price">1000</td>
+                        </tr>
+                        <tr>
+                            <td>Установка Windows 7/10/11</td>
+                            <td class="ts-price">900</td>
+                        </tr>
+                        <tr>
+                            <td>Установка UbuntuOS</td>
+                            <td class="ts-price">450</td>
+                        </tr>
+                        <tr>
+                            <td>Установка Microsoft Office</td>
+                            <td class="ts-price">500</td>
+                        </tr>
+                        <tr>
+                            <td>Установка драйвера устройства</td>
+                            <td class="ts-price">250</td>
+                        </tr>
+                        <tr>
+                            <td>Восстановление удалённых файлов</td>
+                            <td class="ts-price">750</td>
+                        </tr>
+                        <tr>
+                            <td>Очистка компьютера от ненужных файлов и вирусов</td>
+                            <td class="ts-price">450</td>
+                        </tr>
+
+                        <!-- Обслуживание ноутбука -->
+                        <tr>
+                            <th class="ts-name" colspan="2">Обслуживание ноутбука</th>
+                        </tr>
+                        <tr>
+                            <td>Профилактическое обслуживание</td>
+                            <td class="ts-price">800</td>
+                        </tr>
+                        <tr>
+                            <td>Замена материнской платы</td>
+                            <td class="ts-price">900</td>
+                        </tr>
+                        <tr>
+                            <td>Замена оперативной памяти</td>
+                            <td class="ts-price">400</td>
+                        </tr>
+                        <tr>
+                            <td>Замена жесткого диска</td>
+                            <td class="ts-price">450</td>
+                        </tr>
+                        <tr>
+                            <td>Замена клавиатуры</td>
+                            <td class="ts-price">650</td>
+                        </tr>
+
+                        <!-- Обслуживание компьютера -->
+                        <tr>
+                            <th class="ts-name" colspan="2">Обслуживание компьютера</th>
+                        </tr>
+                        <tr>
+                            <td>Профилактическое обслуживание</td>
+                            <td class="ts-price">800</td>
+                        </tr>
+                        <tr>
+                            <td>Замена материнской платы</td>
+                            <td class="ts-price">750</td>
+                        </tr>
+                        <tr>
+                            <td>Замена оперативной памяти</td>
+                            <td class="ts-price">400</td>
+                        </tr>
+                        <tr>
+                            <td>Замена жесткого диска</td>
+                            <td class="ts-price">450</td>
+                        </tr>
+                        <tr>
+                            <td>Замена блока питания</td>
+                            <td class="ts-price">600</td>
+                        </tr>
+
+                        <!-- Обслуживание Wi-Fi роутера -->
+                        <tr>
+                            <th class="ts-name" colspan="2">Обслуживание Wi-Fi роутера</th>
+                        </tr>
+                        <tr>
+                            <td>Подключение Wi-Fi роутера</td>
+                            <td class="ts-price">1200</td>
+                        </tr>
+                        <tr>
+                            <td>Настройка Wi-Fi роутера</td>
+                            <td class="ts-price">600</td>
+                        </tr>
+
+                        <!-- Обслуживание видеонаблюдения -->
+                        <tr>
+                            <th class="ts-name" colspan="2">Обслуживание видеонаблюдения</th>
+                        </tr>
+                        <tr>
+                            <td>Установка одного видеонаблюдения</td>
+                            <td class="ts-price">1400</td>
+                        </tr>
+                        <tr>
+                            <td>Настройка системы видеонаблюдения</td>
+                            <td class="ts-price">700</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </main>
+        <script type="text/javascript">
+            document.ondragstart = prohibit;//запрещаем перетаскивание
+            document.onselectstart = prohibit;//запрещаем выделение
+            document.oncontextmenu = prohibit;//запрещаем клик правой кнопкой
+            function prohibit() {
+                return false;//предотвращает все эти события
+            }
+        </script>
+    </body>
+</html>

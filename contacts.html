@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui, user-scalable=no">
+
+        <title>Awiservice</title>
+
+        <link rel="stylesheet" href="/css/style.css">
+        
+        <link rel="shortcut icon" href="/awiservice.ico" type="image/x-icon">
+        <link rel="mask-icon" href="/image/awiservice-icon.svg" color="#121519">
+        <link rel="apple-touch-icon" href="image/awiservice-icon.png">
+
+        <script defer src="/js/activepage.js"></script>
+    </head>
+    <body id="contacts">
+        <div class="only-mobile">Этот сайт доступен только в мобильной версии.</div>
+        <header>
+            <div class="logo">
+                <a href="/" data-active="index" class="logo-link">
+                    <div class="logo-icon">
+                        <i class="i-logo-icon"></i>
+                        <snap class="logo-text">Awiservice</snap>
+                    </div>
+                </a>
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <a class="nav-link" data-active="index" href="/">Услуги</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" data-active="reviews" href="/reviews">Отзывы</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" data-active="contacts" href="/contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="content">
+                    <div class="content-icon">
+                        <i class="i-lightning"></i>
+                        <h2>Всегда на связи!</h2>
+                        <p>Если тем временем у вас возникнут вопросы, свяжитесь с нами.</p>
+                        <div class="content-send">
+                            <a href="https://t.me/awiservice" target="_blank" class="box-telegram">Telegram</a>
+                            <a href="https://wa.me/+79886058630" target="_blank" class="box-whatsapp">WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="content-map">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5f61599d586dfafa0cb35f081daefa4540de8302707a3b03b56f0fbdbc920115&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script type="text/javascript">
+            document.ondragstart = prohibit; //запрещаем перетаскивание
+            document.onselectstart = prohibit; //запрещаем выделение
+            document.oncontextmenu = prohibit; //запрещаем клик правой кнопкой
+            function prohibit() {
+                return false; //предотвращает все эти события
+            }
+        </script>
+    </body>
+</html>
