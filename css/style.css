@@ -417,7 +417,6 @@ a{
     .only-mobile{
         display: none;
     }
-e
 }
 
 @media screen and (min-width: 990px) {
