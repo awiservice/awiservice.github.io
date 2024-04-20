@@ -200,9 +200,14 @@ a{
     .content{
         display: flex;
         flex-direction: column;
-        row-gap: 15px;
         margin: 10px;
         width: 100%;
+        row-gap: 10px;
+    }
+
+    .info p{
+        font-size: 14px;
+        text-align: center;
     }
 
     /* =============== TABLE, SERVICE =============== */
@@ -235,6 +240,12 @@ a{
     }
 
     /* =============== REVIEWS =============== */
+    .reviews{
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
     .content-reviews{
         display: flex;
         flex-direction: column;
@@ -319,6 +330,12 @@ a{
     }
 
     /* =============== CONTACTS =============== */
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    
     .content-icon{
         display: flex;
         flex-direction: column;
