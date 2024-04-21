@@ -97,26 +97,12 @@ a{
         row-gap: 8px;
     }
 
-    .logo-space{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 100%;
-        padding: 0 15px;
-    }
-
-    .logo-view-counter i{
-        color: #fff;
-        font-size: 18px;
-        height: 100%;
-        display: flex;
-        align-items: center;
-    }
-
     .logo-link{
         display: flex;
         align-items: center;
+        height: 100%;
         color: #fff;
+        padding: 0 15px;
     }
 
     .logo-icon{
@@ -450,7 +436,7 @@ a{
     }
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 991px) {
     header, main{
         display: none;
     }
