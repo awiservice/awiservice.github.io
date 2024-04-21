@@ -27,7 +27,7 @@
                             <snap class="logo-text">Awiservice</snap>
                         </div>
                     </a>
-                    <div class="logo-view-counter" id="logo-view-counter"> </div>
+                    <div class="logo-view-counter" id="view-counter"> </div>
                 </div>
                 <div class="nav">
                     <ul>
@@ -167,11 +167,13 @@
                 projectId: "awiservice777",
                 storageBucket: "awiservice777.appspot.com",
                 messagingSenderId: "401437977746",
+                databaseURL: "https://awiservice777-default-rtdb.europe-west1.firebasedatabase.app/",
                 appId: "1:401437977746:web:de13c2e9a0667ea8c50a4b"
             };
 
             // Initialize Firebase
             const app = initializeApp(firebaseConfig);
+            const database = getDatabase(app);
 
             function get_viewers_ip(json){
                 viewers_ip = json.ip;
@@ -193,7 +195,7 @@
                 
                 firebase.database().ref().child("logo-space").on("value", function(snapshot){
                     views = snapshot.numChildren();
-                    document.getElementById("logo-view-counter").innerHTML = "<i class='bi bi-eye-fill'></i> " + views;
+                    document.getElementById("view-counter").innerHTML = "<i class='bi bi-eye-fill'></i> " + views;
                 });
             }
         </script>
