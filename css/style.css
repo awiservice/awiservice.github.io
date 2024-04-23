@@ -74,7 +74,7 @@ a{
     user-select: all; 
 }
 
-@media screen and (max-width: 990px){
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     /* =============== HEADER LOGO =============== */
     header{
         position: fixed;
@@ -436,12 +436,30 @@ a{
     }
 }
 
-@media screen and (min-width: 991px) {
+@media only screen and (max-device-width: 319px), (min-device-width: 481px) {
     header, main{
         display: none;
     }
 
     .only-mobile{
+        position: absolute;
+        display: flex;
+        top: 150px;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        font-weight: normal;
+        z-index: 100;
+        color: #8794a1;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    header, main, .only-mobile{
+        display: none;
+    }
+
+    .landscape{
         position: absolute;
         display: flex;
         top: 150px;
