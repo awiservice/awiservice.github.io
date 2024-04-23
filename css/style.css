@@ -431,7 +431,7 @@ a{
         text-align: center;
     }
 
-    .only-mobile{
+    .only-mobile, .landscape{
         display: none;
     }
 }
