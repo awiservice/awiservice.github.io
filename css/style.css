@@ -431,7 +431,7 @@ a{
         text-align: center;
     }
 
-    .only-mobile, .landscape{
+    .only-mobile {
         display: none;
     }
 }
@@ -442,24 +442,6 @@ a{
     }
 
     .only-mobile{
-        position: absolute;
-        display: flex;
-        top: 150px;
-        justify-content: center;
-        text-align: center;
-        width: 100%;
-        font-weight: normal;
-        z-index: 100;
-        color: #8794a1;
-    }
-}
-
-@media only screen and (orientation: landscape) {
-    header, main, .only-mobile{
-        display: none;
-    }
-
-    .landscape{
         position: absolute;
         display: flex;
         top: 150px;
