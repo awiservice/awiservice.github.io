@@ -313,13 +313,32 @@ a{
         color: #fff;
     }
 
+    .box-r-date {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        row-gap: 5px;
+        height: 100%;
+    }
+
+    .stars {
+        display: flex;
+        gap: 3px;
+    }
+    
+    .stars i {
+        color: #4db2ff;
+        text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
+        font-size: 16px;
+    }
+
     .pname .r-number, .r-date{
         font-size: 12px;
         font-weight: 300;
         color: var(--text-color);
     }
 
-    .content-comment{
+    .box-comment{
         font-size: 14px;
         font-weight: normal;
         border-left: 4px solid #4db2ff;
