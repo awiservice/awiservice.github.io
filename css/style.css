@@ -1,5 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap'); 
 
 *
 {
@@ -137,6 +136,7 @@ a{
         justify-content: center;
         font-weight: normal;
         letter-spacing: 1px;
+        font-family: 'Open Sans', sans-serif;
     }
 
     .logo-text .logo-title{
@@ -290,7 +290,7 @@ a{
         width: 60px;
         height: 60px;
         overflow: hidden;
-        border-radius: 50px;
+        border-radius: 3px;
         border: 1px solid #4db2ff;
     }
 
@@ -299,7 +299,6 @@ a{
         height: 100%;
         object-fit: cover;
         pointer-events: none;
-        border-radius: 50px;
     }
 
     .pname{
@@ -327,7 +326,7 @@ a{
     }
     
     .stars i {
-        color: #F1C40F;
+        color: #4db2ff;
         text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
         font-size: 16px;
     }
